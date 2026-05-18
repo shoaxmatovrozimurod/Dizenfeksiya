@@ -1,0 +1,63 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "services": "Xizmatlarimiz",
+    "btn": "Kirish"
+  },
+  "hero": {
+    "title": "Dizenfeksiya xizmati",
+    "text": "Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan kompaniyamiz. Mijozlarimiz bizdan mamnun",
+    "btn": "Bog'lanish"
+  },
+  "section": {
+    "mainTitle": "Afzalliklarimiz",
+    "itemTitle": "Tezda xizmat ko’rsatish",
+    "itemText": "Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan kompaniyamiz. Mijozlarimiz bizdan mamnun",
+    "itemTitle2": "Yetuk mutahasislaimiz",
+    "itemText2": "Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan kompaniyamiz Mijozlarimiz bizdan mamnun",
+    "itemTitle3": "Sizga maqul vaqtda",
+    "itemText3": "Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan kompaniyamiz Mijozlarimiz bizdan mamnun"
+  },
+  "banner":
+  {
+    "wrapperTitle": "Klapa va zararli hashorot endi yo’q deb hisoblang !!!",
+    "wrapperText": "Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan kompaniyamiz Mijozlarimiz bizdan mamnun",
+    "wrapperBtn": "Bog'lanish"
+  },
+  "about":{
+    "mainTitle": "Service",
+    "mainText": "Bu darsliklari sizning yuqori daraja olishingizga yordam beradi",
+    "itemTitle": "Boshlang’ich tushunchalar",
+    "itemText": "nazariy bilimlar 16-dars",
+    "itemTitle2": "O’rta",
+    "itemText2": "nazariy va Amaliy bilimlar 23-dars",
+    "itemTitle3": "Yuqori",
+    "itemText3": "Amaliy bilimlar 16-dars"
+  },
+  "feature": {
+    "wrapperTitle": "Bizga ko'p yillardan beri  kompaniyamizga ishonch bildirganlar talaygina",
+    "wrapperBtn": "Bog'lanish"
+  },
+  "faq": {
+    "title": "FAQ",
+    "question1": "Kursdan nima topaman",
+    "question2": "Kursdan nima topaman",
+    "question3": "Kursdan nima topaman",
+    "answer3": "Bu bir nonti kaypiday kapy darsga qatnasha olmasangiz, darsdan so‘ng guruhingizga zoom zapisi tashlab beriladi"
+
+  },
+  "message":{
+  "formTitle": "Malumotingizni qoldiring",
+  "placeholderName": "Ism",
+  "privacy": "Maxfiylik siyosati",
+  "btnText": "Yozilish",
+  "mainTitle": "Bizga ko'p yillardan beri  kompaniyamizga ishonch bildirganlar talaygina"
+  },
+  
+  "footer" :{
+  "boxText": "Toshkent shahri  Yashnabod tumani  Mo’ljal Sergeli-4 bekat",
+  "wrapperText": "+998990009999"
+  }
+}

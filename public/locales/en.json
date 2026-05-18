@@ -1,0 +1,64 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "services": "Our Services",
+    "btn": "Sign In"
+  },
+
+  "hero": {
+    "title": "Disinfection Service",
+    "text": "Our company has been operating for many years. Our customers are satisfied with us",
+    "btn": "Contact Us"
+  }, 
+   
+ "section": {
+  "mainTitle": "Our Advantages",
+  "itemTitle": "Fast Service",
+  "itemText": "Our company has been operating for many years. Our customers are completely satisfied with us.",
+  "itemTitle2": "Experienced Specialists",
+  "itemText2": "Our team consists of highly qualified and experienced professionals who know their job perfectly.",
+  "itemTitle3": "At Your Convenient Time",
+  "itemText3": "We provide our services at any time that is convenient for you, operating 24/7.",
+  "itemTitle4": "Guaranteed Quality",
+  "itemText4": "We guarantee the high quality and safety of every service we provide to our clients."
+},
+"banner": {
+  "wrapperTitle": "Consider bedbugs and pests gone for good !!!",
+  "wrapperText": "Our company has been operating for many years, and our customers are completely satisfied with our services.",
+  "wrapperBtn": "Contact Us"
+},
+"about": {
+  "mainTitle": "Service",
+  "mainText": "These courses will help you achieve a high level of expertise.",
+  "itemTitle": "Beginner concepts",
+  "itemText": "Theoretical knowledge • 16 lessons",
+  "itemTitle2": "Intermediate",
+  "itemText2": "Theoretical and Practical knowledge • 23 lessons",
+  "itemTitle3": "Advanced",
+  "itemText3": "Practical knowledge • 16 lessons"
+},
+"feature": {
+  "wrapperTitle": "Many have put their trust in our company over the years",
+  "wrapperBtn": "Contact Us"
+},
+"faq": {
+  "title": "FAQ",
+  "question1": "What will I get from the course",
+  "question2": "What will I get from the course",
+  "question3": "What will I get from the course",
+  "answer3": "If you cannot attend the live class for some reason, a Zoom recording will be sent to your group after the lesson."
+},
+"message": {
+  "formTitle": "Leave your information",
+  "placeholderName": "Name",
+  "privacy": "Privacy policy",
+  "btnText": "Sign up",
+  "mainTitle": "Many have put their trust in our company over the years"
+},
+"footer": {
+  "boxText": "Tashkent city, Yashnabad district, Landmark: Sergeli-4 station",
+  "wrapperText": "+998990009999"
+}
+}

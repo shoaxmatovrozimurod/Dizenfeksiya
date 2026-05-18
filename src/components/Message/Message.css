@@ -1,0 +1,106 @@
+.message {
+  padding: 60px 0;
+  width: 100%;
+}
+
+/* Figma bo'yicha umumiy fon (Gradient) */
+.message-container {
+  background: radial-gradient(circle, #33A9FF 0%, #33FFF3 100%);
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Oq ariza qutisi */
+.message-form-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.message-form-title {
+  font-family: "Unbounded", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0c1224;
+  margin-bottom: 25px;
+}
+
+.message-input-group {
+  margin-bottom: 15px;
+}
+
+.message-input-group input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #f1f5f9;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.message-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.message-checkbox-group label {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Qora rangli "Yozilish" tugmasi */
+.message-submit-btn {
+  width: 100%;
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* O'ng tomondagi oq rangli katta matn */
+.message-text-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  flex: 1;
+  max-width: 550px;
+}
+
+.message-main-title {
+    text-align: left;
+  font-family: "Unbounded",;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff; /* Fondan ajralib turishi uchun oq rang */
+  line-height: 1.4;
+  text-align: left; /* O'ng tomonga tekislash */
+}
+
+
+/* Mobil holati */
+@media (max-width: 768px) {
+  .message-container {
+    flex-direction: column-reverse; /* Matn tepaga, forma pastga tushadi */
+    padding: 20px;
+  }
+  .message-main-title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .message-form-box {
+    max-width: 100%;
+  }
+}

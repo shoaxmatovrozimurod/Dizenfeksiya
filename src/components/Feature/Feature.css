@@ -1,0 +1,49 @@
+.feature{
+    margin-bottom: 100px;
+}
+.feature-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background: radial-gradient(circle, #33A9FF 0%, #33FFF3 100%);
+    max-width: 1200px;
+    border-radius: 14px;
+    height: 600px; 
+}
+.feature-main{
+    width: 400px;
+    height: 450px;
+    margin-left: 20px;
+    margin-bottom: 46px;
+}
+.feature-wrapper{
+    width: 500px;
+}
+.feature-wrapper-title{
+    font-family: "Unbounded";
+    color: rgb(91, 91, 91);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    margin-bottom: 120px;
+}
+.feature-wrapper-btn {
+    background-color: #2563eb; 
+    color: #ffffff;   
+    padding: 14px 45px;       
+    font-weight: 600;
+    border: none;        
+    border-radius: 30px;       
+    cursor: pointer;          
+    display: inline-block;
+    transition: background-color 0.2s ease, transform 0.1s ease; 
+}
+.feature-wrapper-btn:hover {
+  background-color: #1d4ed8; 
+}
+.feature-wrapper-btn:active {
+  transform: scale(0.97);   
+}

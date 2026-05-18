@@ -1,0 +1,15 @@
+.footer-box{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    gap: 10px;
+}
+.footer-wrapper{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.footer-icon{
+    margin-left: 400px;
+    margin-top: 50px;
+}
