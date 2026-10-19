@@ -1,10 +1,10 @@
 {
   "header": {
-    "home": "Home",
     "about": "About Us",
-    "contact": "Contact",
-    "services": "Our Services",
-    "btn": "Sign In"
+    "services": "Services",
+    "advantages": "Advantages",
+    "faq": "FAQ",
+    "contact": "Contact Us"
   },
 
   "hero": {
