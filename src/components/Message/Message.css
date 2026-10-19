@@ -2,8 +2,6 @@
   padding: 60px 0;
   width: 100%;
 }
-
-/* Figma bo'yicha umumiy fon (Gradient) */
 .message-container {
   background: radial-gradient(circle, #33A9FF 0%, #33FFF3 100%);
   padding: 50px;
@@ -13,8 +11,6 @@
   justify-content: space-between;
   gap: 40px;
 }
-
-/* Oq ariza qutisi */
 .message-form-box {
   background: #ffffff;
   padding: 40px;
@@ -22,7 +18,6 @@
   width: 100%;
   max-width: 400px;
 }
-
 .message-form-title {
   font-family: "Unbounded", sans-serif;
   font-size: 24px;
@@ -34,7 +29,6 @@
 .message-input-group {
   margin-bottom: 15px;
 }
-
 .message-input-group input {
   width: 100%;
   padding: 16px 20px;
@@ -44,20 +38,16 @@
   font-size: 16px;
   outline: none;
 }
-
 .message-checkbox-group {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 20px;
 }
-
 .message-checkbox-group label {
   font-size: 14px;
   color: #64748b;
 }
-
-/* Qora rangli "Yozilish" tugmasi */
 .message-submit-btn {
   width: 100%;
   background-color: #1e293b;
@@ -69,8 +59,6 @@
   border-radius: 12px;
   cursor: pointer;
 }
-
-/* O'ng tomondagi oq rangli katta matn */
 .message-text-box {
     display: flex;
     justify-content: space-between;
@@ -78,22 +66,21 @@
   flex: 1;
   max-width: 550px;
 }
-
 .message-main-title {
     text-align: left;
   font-family: "Unbounded",;
   font-size: 32px;
   font-weight: 700;
-  color: #ffffff; /* Fondan ajralib turishi uchun oq rang */
+  color: #ffffff; 
   line-height: 1.4;
-  text-align: left; /* O'ng tomonga tekislash */
+  text-align: left; 
 }
 
 
-/* Mobil holati */
+
 @media (max-width: 768px) {
   .message-container {
-    flex-direction: column-reverse; /* Matn tepaga, forma pastga tushadi */
+    flex-direction: column-reverse;
     padding: 20px;
   }
   .message-main-title {

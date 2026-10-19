@@ -69,11 +69,8 @@ const Message = () => {
 
               <div className="message-input-group">
                 <input 
-                  type="text" 
-                  placeholder="+998" 
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                />
+                  type="text" placeholder="+998" value={phone} onChange={(e) => setPhone(e.target.value)}
+                  />
               </div>
 
               <div className="message-checkbox-group">
@@ -87,7 +84,6 @@ const Message = () => {
             </form>
           </div>
 
-          {/* 2. O'ng tomondagi matn qismi */}
           <div className="message-text-box">
                 <h2 className="message-main-title">{t("message.mainTitle")}
                 <img src= {odam} width={200} height={220} alt="" />

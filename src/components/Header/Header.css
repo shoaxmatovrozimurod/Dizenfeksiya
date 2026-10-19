@@ -1,6 +1,4 @@
-/* Header.css */
 
-/* Umumiy konteynerlar tartibi */
 .header {
   width: 100%;
   background-color: #ffffff;
@@ -24,14 +22,11 @@
   padding: 15px 0;
 }
 
-/* Logo stili */
 .header-container a img {
-  height: 45px; /* Logongiz o'lchamiga qarab moslang */
+  height: 45px;
   object-fit: contain;
   display: block;
 }
-
-/* Navigatsiya ro'yxati (Menu) */
 .header-list {
   display: flex;
   list-style: none;
@@ -49,10 +44,9 @@
 }
 
 .header-item-link:hover {
-  color: #007bff; /* Hover bo'lgandagi ko'k rang */
+  color: #007bff; 
 }
 
-/* Til tanlash (Select) qismi */
 .header-select {
   padding: 8px 12px;
   border: 1px solid #cccccc;
@@ -69,7 +63,6 @@
   border-color: #007bff;
 }
 
-/* Kirish tugmasi (Button) */
 .header-btn {
   padding: 10px 24px;
   background-color: #007bff;
@@ -83,14 +76,13 @@
 }
 
 .header-btn:hover {
-  background-color: #0056b3; /* To'qroq ko'k */
+  background-color: #0056b3; 
 }
 
 .header-btn:active {
   transform: scale(0.98);
 }
 
-/* --- Responsive (Mobil qurilmalar uchun moslashuvchanlik) --- */
 @media (max-width: 768px) {
   .header-container {
     flex-wrap: wrap;
@@ -98,7 +90,7 @@
   }
 
   .header-list {
-    order: 3; /* Mobil ekranda menyuni pastga tushiradi */
+    order: 3;
     width: 100%;
     justify-content: center;
     gap: 15px;
