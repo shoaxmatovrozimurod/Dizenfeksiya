@@ -1,143 +1,162 @@
-/* Hero.css */
-
+/* Hero asosiy qismi - fixed header balandligini hisobga olgan holda */
 .hero {
-  margin-top: 100px; /* Headeringiz balandligiga qarab moslang */
+  margin-top: 75px; /* Header balandligiga aniq mos */
   width: 100%;
-  padding: 60px 0;
-  overflow: hidden; /* Rasmlar ekrandan chiqib ketganda skrol paydo bo'lmasligi uchun */
+  padding: 60px 0 80px 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
 }
 
-/* Umumiy konteyner */
+/* Flex konteyner */
 .hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 
-/* Matnlar joylashgan quti */
+/* Chap tomondagi matn qutisi */
 .hero-box {
   flex: 1;
+  max-width: 550px;
 }
 
 .hero-box-title {
-  display: inline-block;
-  font-family: "Unbounded", sans-serif;
+  display: block;
+  font-family: "Unbounded", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: 0;
+  font-size: 52px;
+  line-height: 1.18;
+  letter-spacing: -0.5px;
   color: #3375FF;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   transition: color 0.3s ease;
 }
 
 .hero-box-title:hover {
-  color: #0056b3;
+  color: #1e5de6;
 }
 
 .hero-box-text {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0;
-  color: #333333;
-  opacity: 0.7;
-  max-width: 480px; /* Matn juda uzun yoyilib ketmasligi uchun */
-  margin-bottom: 40px;
-  transition: opacity 0.3s ease;
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 36px;
+  max-width: 460px;
 }
 
-.hero-box-text:hover {
-  opacity: 1;
-}
-
-/* Tugma (Button) stili */
+/* Bog'lanish tugmasi */
 .hero-box-btn {
-  font-family: "Unbounded", sans-serif;
+  font-family: "Unbounded", system-ui, sans-serif;
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: 0.5px;
   color: #ffffff;
-  background-color: #3375FF;
-  padding: 15px 32px;
-  border: 2px solid transparent;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #3375FF 0%, #1e5de6 100%);
+  padding: 15px 36px;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 8px 20px rgba(51, 117, 255, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 14px rgba(51, 117, 255, 0.3);
 }
 
 .hero-box-btn:hover {
-  background-color: transparent;
-  color: #3375FF;
-  border-color: #3375FF;
-  box-shadow: 0 6px 20px rgba(51, 117, 255, 0.4);
   transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(51, 117, 255, 0.4);
 }
 
 .hero-box-btn:active {
-  transform: translateY(0) scale(0.96);
-  box-shadow: 0 2px 10px rgba(51, 117, 255, 0.2);
+  transform: translateY(0);
 }
 
-/* --- Rasmlar qismi (Eng muhim joyi) --- */
+/* O'ng tomondagi rasmlar qismi */
 .hero-wrapper {
   flex: 1;
+  position: relative;
   display: flex;
-  position: relative; /* Ichidagi doira rasm absolut joylashishi uchun poydevor */
   justify-content: flex-end;
   align-items: center;
+  max-width: 560px;
 }
 
-/* Asosiy Fon rasmi */
+/* Asosiy xodim rasmi */
 .hero-wrapper-Fon {
-  max-width: 100%;
+  width: 100%;
+  max-width: 520px;
   height: auto;
+  border-radius: 20px;
   object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   position: relative;
-  z-index: 1; /* Doiradan pastda turishi uchun */
+  z-index: 1;
 }
 
-/* Orqadagi yoki yondagi Doira rasm */
+/* Doira rasm (spray ushlagan qo'l doirasi) */
 .hero-wrapper-circle {
   position: absolute;
-  left: -20px; /* Dizaynga qarab o'ngga-chapga surishingiz mumkin */
-  top: 10%;    /* Tepadagi joylashuvi */
-  width: 170px;
-  height: 210px;
-  object-fit: contain;
-  z-index: 2;  /* Fon rasmining ustiga chiqishi uchun */
-  animation: float 4s ease-in-out infinite; /* Doiraga yengil suzish effekti */
+  left: -40px;
+  top: 18%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 2;
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: float 4s ease-in-out infinite;
 }
 
-/* Doira uchun chiroyli harakatlanish animatsiyasi */
+/* Yengil suzish effekti */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
 
-/* --- Responsive (Mobil ekranlar uchun) --- */
-@media (max-width: 992px) {
+/* =========================================
+   RESPONSIV MOSLASHUV
+========================================= */
+
+/* Noutbuklar va o'rtacha ekranlar (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-box-title {
+    font-size: 44px;
+  }
+
+  .hero-wrapper-circle {
+    width: 130px;
+    height: 130px;
+    left: -25px;
+  }
+}
+
+/* Planshetlar (max-width: 868px) */
+@media (max-width: 868px) {
   .hero {
-    margin-top: 80px;
-    padding: 40px 0;
+    margin-top: 70px;
+    padding: 40px 0 60px 0;
   }
 
   .hero-container {
-    flex-direction: column; /* Telefonlarda matn tepaga, rasm pastga tushadi */
+    flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 45px;
+  }
+
+  .hero-box {
+    max-width: 100%;
   }
 
   .hero-box-title {
     font-size: 38px;
-    line-height: 44px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-box-text {
@@ -147,11 +166,52 @@
   .hero-wrapper {
     justify-content: center;
     width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   .hero-wrapper-circle {
+    left: 0;
+    top: 10%;
     width: 120px;
-    height: 160px;
-    left: 10%; /* Mobil ekranda joylashuvini moslash */
+    height: 120px;
+  }
+}
+
+/* Smartfonlar (max-width: 576px) */
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 65px;
+    padding: 30px 0 50px 0;
+  }
+
+  .hero-box-title {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .hero-box-text {
+    font-size: 14.5px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  .hero-box-btn {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+
+  .hero-wrapper {
+    max-width: 100%;
+  }
+
+  .hero-wrapper-circle {
+    width: 90px;
+    height: 90px;
+    border-width: 3px;
+    left: -10px;
+    top: 5%;
   }
 }
