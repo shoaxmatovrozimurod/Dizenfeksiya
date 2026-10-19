@@ -33,8 +33,6 @@ html, body {
   padding: 0 16px;
   box-sizing: border-box;
 }
-
-/* Barcha rasmlarni o'z ota-blokiga moslashtirish */
 img {
   max-width: 100%;
   height: auto;
