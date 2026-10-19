@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "./Secetion.css";
-import img1 from './images/miya.png'; // Rasm importi to'g'ri
+import img1 from './images/miya.png'; 
 import img2 from './images/varoq.png'
 import img3 from './images/qol.png'
 
@@ -17,7 +17,6 @@ const Section = () => {
                 <ul className='section-list'>
 
                   <li className='section-list-item'>
-                    {/* Rasm komponentga to'g'ri uzatilgan */}
                     <img className='section-list-item-img' src={img1} alt="" />
                     
                     <h2 className='section-list-item-title'> {t("section.itemTitle")} </h2>
@@ -25,7 +24,6 @@ const Section = () => {
                   </li>
 
                   <li className='section-list-item'>
-                    {/* Rasm komponentga to'g'ri uzatilgan */}
                     <img className='section-list-item-img' src={img2} alt="" />
                     
                     <h2 className='section-list-item-title'> {t("section.itemTitle2")} </h2>
@@ -33,7 +31,6 @@ const Section = () => {
                   </li>
 
                   <li className='section-list-item'>
-                    {/* Rasm komponentga to'g'ri uzatilgan */}
                     <img className='section-list-item-img' src={img3} alt="" />
                     
                     <h2 className='section-list-item-title'> {t("section.itemTitle3")} </h2>

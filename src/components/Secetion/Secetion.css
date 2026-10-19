@@ -1,53 +1,120 @@
-.section{
-  margin-bottom: 110px;
+.section {
+  padding: 60px 0 100px 0;
+  width: 100%;
 }
+
+.section-container {
+  width: 100%;
+}
+
+.section-title {
+  font-family: "Unbounded", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.25;
+  color: #1a202c;
+  margin: 0 0 45px 0;
+  text-align: left;
+}
+
 .section-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .section-list-item {
   background-color: #ffffff;
-  border-radius: 16px;
-  padding: 32px 24px;
-  border: 2px solid #e2e8f0; 
+  border-radius: 20px;
+  padding: 40px 28px;
+  border: 2px solid #edf2f7;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%;
-  max-width: 350px;
   box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
-.section-list-item:hover{
-    border: 2px solid rgb(61, 145, 224) ;
-transition: border-color 0.3s ease;}
+
+.section-list-item:hover {
+  border-color: #3375ff;
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(51, 117, 255, 0.12);
+}
 
 .section-list-item-img {
   width: 64px;
   height: 64px;
   object-fit: contain;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease;
 }
+
+.section-list-item:hover .section-list-item-img {
+  transform: scale(1.1);
+}
+
 .section-list-item-title {
+  font-family: "Unbounded", -apple-system, sans-serif;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1a202c;
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
   line-height: 1.4;
 }
+
 .section-list-item-text {
+  font-family: system-ui, -apple-system, sans-serif;
   font-size: 0.95rem;
-  color: #4a5568;
+  color: #64748b;
   line-height: 1.6;
   margin: 0;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 992px) {
+  .section-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 30px 0 60px 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .section-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .section-list-item {
-    max-width: 100%;
-    padding: 24px 20px;
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .section-list-item-title {
+    font-size: 1.15rem;
+  }
+
+  .section-list-item-text {
+    font-size: 0.9rem;
   }
 }

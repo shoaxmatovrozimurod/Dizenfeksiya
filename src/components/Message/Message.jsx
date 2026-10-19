@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Message.css';
 import { useTranslation } from 'react-i18next';
-import odam from './images/person.png'
+import odam from './images/person.png';
 
 const Message = () => {
   const { t } = useTranslation();
@@ -20,12 +20,10 @@ const Message = () => {
 
     setLoading(true);
 
-    // Siz qo'ygan haqiqiy ma'lumotlar
     const TELEGRAM_TOKEN = "8782036842:AAGdjY193vFIyuKBmql97R3AcdgjMh9FaPA"; 
     const CHAT_ID = "8419615333"; 
     
     const text = `🔔 YANGI ARIZA TUSHDI!\n\n👤 Mijoz ismi: ${name}\n📞 Telefon raqami: ${phone}\n📅 Yuborilgan vaqt: ${new Date().toLocaleString('uz-UZ')}`;
-    
     const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
 
     try {
@@ -50,7 +48,7 @@ const Message = () => {
   };
 
   return (
-    <div className="message">
+    <div className="message" id="contact">
       <div className="container">
         <div className="message-container">
           
@@ -64,13 +62,18 @@ const Message = () => {
                   placeholder={t("message.placeholderName")} 
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  required
                 />
               </div>
 
               <div className="message-input-group">
                 <input 
-                  type="text" placeholder="+998" value={phone} onChange={(e) => setPhone(e.target.value)}
-                  />
+                  type="tel" 
+                  placeholder="+998" 
+                  value={phone} 
+                  onChange={(e) => setPhone(e.target.value)}
+                  required
+                />
               </div>
 
               <div className="message-checkbox-group">
@@ -85,9 +88,8 @@ const Message = () => {
           </div>
 
           <div className="message-text-box">
-                <h2 className="message-main-title">{t("message.mainTitle")}
-                <img src= {odam} width={200} height={220} alt="" />
-            </h2>
+            <h2 className="message-main-title">{t("message.mainTitle")}</h2>
+            <img className="message-person-img" src={odam} alt="Xodim rasmi" />
           </div>
 
         </div>

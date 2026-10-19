@@ -1,93 +1,183 @@
 .message {
-  padding: 60px 0;
   width: 100%;
+  padding: 60px 0 100px 0;
 }
+
 .message-container {
-  background: radial-gradient(circle, #33A9FF 0%, #33FFF3 100%);
-  padding: 50px;
-  border-radius: 20px;
+  background: linear-gradient(135deg, #22d3ee 0%, #0284c7 100%);
+  border-radius: 24px;
+  padding: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 50px;
+  box-shadow: 0 20px 40px rgba(2, 132, 199, 0.15);
+  box-sizing: border-box;
 }
+
 .message-form-box {
   background: #ffffff;
-  padding: 40px;
+  padding: 40px 32px;
   border-radius: 20px;
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
 }
+
 .message-form-title {
-  font-family: "Unbounded", sans-serif;
-  font-size: 24px;
+  font-family: "Unbounded", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 22px;
   font-weight: 700;
-  color: #0c1224;
-  margin-bottom: 25px;
+  color: #1a202c;
+  margin: 0 0 24px 0;
 }
 
 .message-input-group {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
+
 .message-input-group input {
   width: 100%;
-  padding: 16px 20px;
-  border: 1px solid #f1f5f9;
+  padding: 14px 18px;
+  border: 1.5px solid #e2e8f0;
   background-color: #f8fafc;
-  border-radius: 12px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #1e293b;
   outline: none;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
 }
+
+.message-input-group input:focus {
+  background-color: #ffffff;
+  border-color: #3375ff;
+  box-shadow: 0 0 0 3px rgba(51, 117, 255, 0.15);
+}
+
 .message-checkbox-group {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 24px;
+  cursor: pointer;
 }
+
+.message-checkbox-group input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
 .message-checkbox-group label {
-  font-size: 14px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 13.5px;
   color: #64748b;
+  cursor: pointer;
 }
+
 .message-submit-btn {
   width: 100%;
   background-color: #1e293b;
   color: #ffffff;
-  padding: 16px;
-  font-size: 16px;
+  padding: 15px;
+  font-family: "Unbounded", system-ui, sans-serif;
+  font-size: 15px;
   font-weight: 600;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 6px 16px rgba(30, 41, 59, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.message-submit-btn:hover {
+  background-color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(30, 41, 59, 0.35);
+}
+
+.message-submit-btn:active {
+  transform: translateY(0);
+}
+
+.message-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .message-text-box {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
   flex: 1;
-  max-width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 600px;
 }
+
 .message-main-title {
-    text-align: left;
-  font-family: "Unbounded",;
+  font-family: "Unbounded", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 32px;
   font-weight: 700;
-  color: #ffffff; 
-  line-height: 1.4;
-  text-align: left; 
+  color: #ffffff;
+  line-height: 1.35;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.message-person-img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
 
+@media (max-width: 992px) {
+  .message-container {
+    padding: 40px 30px;
+    gap: 35px;
+  }
+
+  .message-main-title {
+    font-size: 26px;
+  }
+
+  .message-person-img {
+    width: 150px;
+  }
+}
 
 @media (max-width: 768px) {
+  .message {
+    padding: 30px 0 60px 0;
+  }
+
   .message-container {
     flex-direction: column-reverse;
-    padding: 20px;
+    padding: 35px 20px;
+    gap: 30px;
   }
-  .message-main-title {
-    text-align: center;
-    font-size: 24px;
-  }
+
   .message-form-box {
     max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .message-text-box {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .message-main-title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .message-person-img {
+    width: 130px;
   }
 }

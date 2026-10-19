@@ -3,7 +3,6 @@ import "./Banner.css";
 import { useTranslation } from 'react-i18next'; 
 
 const Banner = () => {
-  // useTranslation hooki to'g'ri komponent ichiga joylashtirildi
   const { t } = useTranslation();
 
   return (
@@ -12,7 +11,6 @@ const Banner = () => {
             <div className="banner-container">
                 
                 <div className="banner-main">
-                    {/* Chap tomondagi rasm yoki boshqa kontent uchun */}
                 </div>
 
                 <div className="banner-wrapper">

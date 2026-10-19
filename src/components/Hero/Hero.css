@@ -1,6 +1,6 @@
 /* Hero asosiy qismi - fixed header balandligini hisobga olgan holda */
 .hero {
-  margin-top: 75px; /* Header balandligiga aniq mos */
+  margin-top: 75px; 
   width: 100%;
   padding: 60px 0 80px 0;
   overflow: hidden;
@@ -8,7 +8,6 @@
   background-color: #ffffff;
 }
 
-/* Flex konteyner */
 .hero-container {
   display: flex;
   justify-content: space-between;
@@ -16,7 +15,6 @@
   gap: 40px;
 }
 
-/* Chap tomondagi matn qutisi */
 .hero-box {
   flex: 1;
   max-width: 550px;
@@ -48,7 +46,6 @@
   max-width: 460px;
 }
 
-/* Bog'lanish tugmasi */
 .hero-box-btn {
   font-family: "Unbounded", system-ui, sans-serif;
   font-weight: 600;
@@ -75,7 +72,6 @@
   transform: translateY(0);
 }
 
-/* O'ng tomondagi rasmlar qismi */
 .hero-wrapper {
   flex: 1;
   position: relative;
@@ -85,7 +81,6 @@
   max-width: 560px;
 }
 
-/* Asosiy xodim rasmi */
 .hero-wrapper-Fon {
   width: 100%;
   max-width: 520px;
@@ -97,7 +92,6 @@
   z-index: 1;
 }
 
-/* Doira rasm (spray ushlagan qo'l doirasi) */
 .hero-wrapper-circle {
   position: absolute;
   left: -40px;
@@ -112,18 +106,11 @@
   animation: float 4s ease-in-out infinite;
 }
 
-/* Yengil suzish effekti */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
-
-/* =========================================
-   RESPONSIV MOSLASHUV
-========================================= */
-
-/* Noutbuklar va o'rtacha ekranlar (max-width: 1024px) */
 @media (max-width: 1024px) {
   .hero-box-title {
     font-size: 44px;
@@ -136,7 +123,6 @@
   }
 }
 
-/* Planshetlar (max-width: 868px) */
 @media (max-width: 868px) {
   .hero {
     margin-top: 70px;
@@ -178,7 +164,6 @@
   }
 }
 
-/* Smartfonlar (max-width: 576px) */
 @media (max-width: 576px) {
   .hero {
     margin-top: 65px;
