@@ -5,7 +5,7 @@ import fonImg from './images/img2.png';
 import "./Hero.css";
 
 const Hero = () => {
-  const { t } = useTranslation(); // i18n ishlatilmagani uchun olib tashlandi
+  const { t } = useTranslation(); 
 
   return (
     <div className="hero">

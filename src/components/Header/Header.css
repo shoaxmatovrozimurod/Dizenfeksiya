@@ -1,11 +1,9 @@
-/* Asosiy konteyner */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Header asosiy qismi */
 .header {
   width: 100%;
   background-color: #ffffff;
@@ -35,7 +33,6 @@
   padding: 10px 0;
 }
 
-/* Logo dizayni */
 .header-logo {
   display: flex;
   align-items: center;
@@ -55,7 +52,6 @@
   box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
 }
 
-/* Navigatsiya menyusi */
 .header-nav {
   display: flex;
   align-items: center;
@@ -79,7 +75,6 @@
   transition: color 0.3s ease;
 }
 
-/* Zamonaviy chiziqli hover effekti */
 .header-item-link::after {
   content: '';
   position: absolute;
@@ -101,7 +96,6 @@
   left: 0;
 }
 
-/* O'ng tomon: Til tanlash va Tugma */
 .header-actions {
   display: flex;
   align-items: center;
@@ -157,7 +151,6 @@
   display: none;
 }
 
-/* Burger tugmasi (Standart holatda yashirin) */
 .burger-btn {
   display: none;
   flex-direction: column;
@@ -180,7 +173,6 @@
   transform-origin: 1px;
 }
 
-/* Burger faollashgandagi (X shaklidagi) animatsiyasi */
 .burger-btn.active span:nth-child(1) {
   transform: rotate(45deg);
 }
@@ -194,7 +186,6 @@
   transform: rotate(-45deg);
 }
 
-/* RESPONSIVE (Planshet va Mobil qurilmalar) */
 @media (max-width: 868px) {
   .burger-btn {
     display: flex;

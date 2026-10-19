@@ -36,13 +36,11 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="header-container">
-          {/* Logo */}
           <a href="#" className="header-logo" onClick={closeMenu}>
             <span className="logo-icon"></span>
             <span className="logo-text">Dizenfeksiya</span>
           </a>
 
-          {/* Menyu */}
           <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
             <ul className="header-list">
               <li className="header-item">
@@ -83,7 +81,6 @@ const Header = () => {
             </div>
           </nav>
 
-          {/* O'ng tarafdagi elementlar (Desktop) */}
           <div className="header-actions">
             <select 
               className="header-select" 
@@ -99,7 +96,6 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Burger tugmasi */}
           <button 
             className={`burger-btn ${isMenuOpen ? 'active' : ''}`} 
             onClick={toggleMenu}
