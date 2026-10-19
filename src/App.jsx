@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Secetion from  './components/Secetion/Secetion'
 import Banner from './components/Banner/Banner'
@@ -11,6 +12,7 @@ import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <>
+    <Header />
     <Hero /> 
     <Secetion />
     <Banner />
@@ -20,6 +22,7 @@ const App = () => {
     <Message />
     <Footer />
     </>
+   
   )
 }
 

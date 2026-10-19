@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Header.css';
 
 const Header = () => {
+    const { t, i18n } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
-    // Scroll bo'lganda headerga soya va ixchamlik berish
+    // Scroll effektini kuzatish
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 20) {
@@ -18,6 +20,12 @@ const Header = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // Tilni almashtirish funksiyasi
+    const handleChangeLanguage = (e) => {
+        const selectedLanguage = e.target.value;
+        i18n.changeLanguage(selectedLanguage);
+    };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -33,75 +41,64 @@ const Header = () => {
                 <div className="header-container">
                     {/* Logo */}
                     <a href="#" className="header-logo" onClick={closeMenu}>
-                        {/* O'zingizning logotipingiz bo'lsa rasmni qo'ying yoki quyidagi matnli logotipdan foydalaning */}
                         <span className="logo-icon"></span>
                         <span className="logo-text">Dizenfeksiya</span>
                     </a>
 
-                    {/* Navigatsiya menyusi */}
+                    {/* Menyu */}
                     <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
                         <ul className="header-list">
                             <li className="header-item">
                                 <a href="#about" className="header-item-link" onClick={closeMenu}>
-                                    Biz haqimizda
+                                    {t("header.about")}
                                 </a>
                             </li>
                             <li className="header-item">
                                 <a href="#services" className="header-item-link" onClick={closeMenu}>
-                                    Xizmatlar
+                                    {t("header.services")}
                                 </a>
                             </li>
                             <li className="header-item">
                                 <a href="#advantages" className="header-item-link" onClick={closeMenu}>
-                                    Afzalliklar
+                                    {t("header.advantages")}
                                 </a>
                             </li>
                             <li className="header-item">
                                 <a href="#faq" className="header-item-link" onClick={closeMenu}>
-                                    FAQ
+                                    {t("header.faq")}
                                 </a>
                             </li>
                         </ul>
 
-                        {/* Mobil qurilmalarda menyu ichida ko'rinadigan qism */}
+                        {/* Mobil qurilmadagi til va tugma */}
                         <div className="mobile-actions">
-                            <select className="header-select">
+                            <select
+                                className="header-select"
+                                value={i18n.language}
+                                onChange={handleChangeLanguage}
+                            >
                                 <option value="uz">UZ</option>
                                 <option value="ru">RU</option>
                                 <option value="en">EN</option>
                             </select>
                             <a href="#contact" className="header-btn" onClick={closeMenu}>
-                                Bog'lanish
+                                {t("header.contact")}
                             </a>
                         </div>
                     </nav>
 
                     {/* Desktop o'ng tomon elementlari */}
                     <div className="header-actions">
-                        <select className="header-select">
+                        <select
+                            className="header-select"
+                            value={i18n.language}
+                            onChange={handleChangeLanguage}
+                        >
                             <option value="uz">UZ</option>
                             <option value="ru">RU</option>
                             <option value="en">EN</option>
                         </select>
                         <a href="#contact" className="header-btn">
-                            Bog'lanish
+                            {t("header.contact")}
                         </a>
                     </div>
-
-                    {/* Burger Tugmasi */}
-                    <button
-                        className={`burger-btn ${isMenuOpen ? 'active' : ''}`}
-                        onClick={toggleMenu}
-                        aria-label="Menyu"
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </header>
-    );
-};
-
-export default Header;
