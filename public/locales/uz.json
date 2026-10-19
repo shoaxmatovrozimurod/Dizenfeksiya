@@ -1,10 +1,10 @@
 {
   "header": {
-    "home": "Bosh sahifa",
     "about": "Biz haqimizda",
-    "contact": "Aloqa",
-    "services": "Xizmatlarimiz",
-    "btn": "Kirish"
+    "services": "Xizmatlar",
+    "advantages": "Afzalliklar",
+    "faq": "FAQ",
+    "contact": "Bog'lanish"
   },
   "hero": {
     "title": "Dizenfeksiya xizmati",
